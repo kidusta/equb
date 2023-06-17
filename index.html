@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Registration</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    /* *{
+        color: #22A699;
+        color: #F2BE22;
+        color: #F29727;
+        color: #F24C3D;
+        color: #001019;
+        color: #FBFAF5;
+    } */
+    * {
+  margin: 0;
+  padding: 0;
+}
+    body{
+        /* background-color: #001019;
+        background: orange; */
+       /* background-image: url('/r.jpg');  */
+       background-size:900px;
+       background-position-x:700px;
+       background-position-y: 0px;
+       background-position: fixed;
+       background-repeat: no-repeat;
+       background-color: #f2c84b;
+    }
+    .clm{
+        
+        background-color: #001019;
+        color: #FBFAF5;
+        border-radius: 20px;
+        padding: 40px;
+        margin: 10px 20px;
+        font-family: satoshi;
+        font-weight: 400;
+        font-size: larger;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    }
+    .clm2 {
+        
+        background-color: #001019;
+        color: #FBFAF5;
+        border-radius: 20px;
+        padding: 40px;
+        margin: 10px 20px;
+        font-family: satoshi;
+        font-weight: 400;
+        font-size: larger;
+    }
+    .txt{
+        color: #F24C3D;
+    }
+    table {
+      color: #f0f0f0;
+      background-color: #dddddd;
+    }
+    th {
+      background-color: #001019; 
+      color: #FBFAF5; 
+    }
+    .overlay {
+      background-color: rgba(0, 0, 0, 0.5); /* Black color with 0.5 opacity */
+      width: 100%;
+      height: 65%;
+      position: absolute;
+      /* top: 90px; */
+      left: 0;
+    }
+
+    .container {
+      position: relative;
+      z-index: 1;
+    }
+
+    .footer {
+      background-color: #f0f0f0; /* Light gray background color for the footer */
+      padding: 200px;
+      text-align: center;
+      color: #333333; /* Dark gray color for the footer text */
+      margin-top: 50px;
+    }
+    .logo{
+      font-family: satoshi;
+      font-weight: 700;
+      font-size: 45px;
+    }
+    .green {
+    color: green;
+  }
+
+  .yellow {
+    color: yellow;
+  }
+
+  .red {
+    color: red;
+  }
+  .nvbar {
+    font-size: larger;
+    color: #f0f0f0;
+  }
+  .about{
+        background-color: #001019;
+        color: #FBFAF5;
+        border-radius: 20px;
+        /* padding: auto; */
+        /* margin: 10px 20px; */
+        width: fit-content;
+        
+        font-family: satoshi;
+        font-weight: 200;
+        font-size: larger;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        padding: 40px;
+        
+  }
+  .header{
+    font-family: satoshi;
+    font-weight: 700;
+    font-size: 45px;
+  }
+  .img1{
+    justify-content: end;
+    max-width: fit-content;
+    width: 500px;
+    height: auto;
+    margin-top: 40px;
+    margin-bottom: 20px;
+  }
+  img{
+    position: relative;
+  top: 70%;
+  left: 10px;
+  transform: translateY(-70%);
+    size: 600px;
+  }
+#navbarNav{
+  font-weight: 700;
+  color: #f0f0f0;
+}
+.navbar{
+  background-color: #001019;
+  font-size: larger;
+}
+.abt{
+    margin-top: 60px;
+    padding: 40px;
+}
+.footer {
+  background-color: #f0f0f0;
+  padding: 40px 0;
+}
+
+.footer h4 {
+  color: #333333;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.footer p {
+  color: #777777;
+}
+
+.social-media li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.social-media li a {
+  color: #777777;
+  font-size: 28px;
+}
+
+.footer-bottom {
+  background-color: #dddddd;
+  padding: 10px 0;
+  margin-top: 30px;
+}
+
+.footer-bottom p {
+  color: #777777;
+  font-size: 14px;
+}
+
+  </style>
+</head>
+
+<nav class="navbar navbar-expand-md navbar-dark bg-light-subtle" data-bs-theme="dark">
+  <a class="navbar-brand logo" href="#">
+    <span class="green">E</span>
+    <span class="yellow">ቁ</span>
+    <span class="red">B</span>
+  </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Registration</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">About</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+
+      <body class="">
+    <div class="overlay"></div>
+  <div class="row container-fluid text-center justify-content-center">
+      <div class="clm col-lg-5 col-md-12 container ">
+        <h2>Registration</h2>
+        <form id="registrationForm">
+          <div class="form-group">
+            <label for="username">Username:</label>
+            <input type="text" class="form-control" id="username" required>
+          </div>
+          <div class="form-group">
+            <label for="phone">Phone Number:</label>
+            <input type="text" class="form-control" id="phone" required>
+          </div>
+          <div class="form-group">
+            <label for="money">Amount to Add:</label>
+            <input type="number" class="form-control" id="money" required>
+          </div>
+          <button type="submit" class="btn btn-primary">Register</button>
+        </form>
+      </div>
+        <hr>
+        <div class="clm2 col-lg-5 col-md-12 container x-2">
+            <h4>Registered Users:</h4>
+            <table class="table">
+              <thead>
+                <tr class="txt">
+                  <th>Username</th>
+                  <th>Phone Number</th>
+                  <th>Amount Added</th>
+                  <th>remove</th>
+                </tr>
+              </thead>
+              <tbody id="registeredUsers">
+              </tbody>
+            </table>
+            
+            <button id="revealWinnerBtn" class="btn btn-success">Reveal Winner</button>
+            <h4 id="winner"></h4>
+              </div>
+  </div>
+  
+</div>
+</body>
+<div class="container abt d-flex  ">
+  <div class="row about col-lg-12 col-md-12 px-2">
+    <div class="col-12">
+      <h1 class="header py-5">About<a class="" href="#">
+        <span class="green">E</span>
+        <span class="yellow">ቁ</span>
+        <span class="red">B</span>
+      </a></h1>
+      <p>The Ethiopian Equb serves as a means of financial support and resource mobilization for individuals who may not have access to formal banking services. It promotes community cohesion, trust, and mutual support. However, it's important to note that participation in an Equb entails a level of commitment, trust, and understanding among the members, as defaulting on contributions can disrupt the system. It's worth mentioning that the specifics of Equb operations can vary depending on the group's agreed-upon rules, contribution amounts, and rotation frequency.</p>
+      
+    </div>
+    <div class="img1 col-6 col-lg-5 col-md-12">
+      <img src="mesob.jpg" alt="#" width="461" height="223">
+    </div>
+
+  </div>
+  
+
+</div>
+
+<div class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4">
+        <h4>About Us</h4>
+        <p>We responsible for collecting contributions from members, keeping records of transactions, and safely holding the pooled funds until they are distributed to members. Our duty is maintaining transparency and accountability within the Equb.</p>
+      </div>
+      <div class="col-md-4">
+        <h4>Contact Us</h4>
+        <p>Email: info@Equb.com</p>
+        <p>Phone: +1 123 456 7890</p>
+        <p>Address: 123 Main Street, Addis Abeba, Ethiopia</p>
+      </div>
+      <div class="col-md-4">
+        <h4>Follow Us</h4>
+        <ul class="social-media">
+          <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+          <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+          <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 text-center">
+          <p>&copy; 2023 <a class="" href="#">
+            <span class="green">E</span>
+            <span class="yellow">ቁ</span>
+            <span class="red">B</span>
+          </a>. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="https://kit.fontawesome.com/719426fec5.js" crossorigin="anonymous"></script>
+  <script>
+   $(document).ready(function() {
+  var users = [];
+
+  $('#registrationForm').submit(function(e) {
+    e.preventDefault();
+    var username = $('#username').val();
+    var phone = $('#phone').val();
+    let money = parseInt($('#money').val());
+
+    users.push({ username: username, phone: phone, money: money });
+    addUserToTable(username, phone, money);
+    $('#username').val('');
+    $('#phone').val('');
+    $('#money').val('');
+  });
+
+  function addUserToTable(username, phone, money) {
+    var row = '<tr><td>' + username + '</td><td>' + phone + '</td><td>' + money + '</td><td><button class="btn btn-danger btn-sm remove-user">Remove</button></td></tr>';
+    $('#registeredUsers').append(row);
+  }
+
+  function removeUser() {
+    var row = $(this).closest('tr');
+    var index = row.index();
+    users.splice(index, 1);
+    row.remove();
+  }
+ 
+$(document).on('click', '.remove-user', removeUser);
+
+  $('#revealWinnerBtn').click(function() {
+    if (users.length < 2) {
+      alert('Not enough players registered yet!');
+      return;
+    }
+    else if (users.length === 0 ){
+      alert('No users registered yet!');
+      return;
+    }
+
+    var winnerIndex = Math.floor(Math.random() * users.length);
+    var winner = users[winnerIndex];
+    users.splice(winnerIndex, 1);
+
+    var totalMoney = 0;
+    users.forEach(function(user) {
+      totalMoney += user.money;
+    });
+
+    var winnings = totalMoney;
+    $('#winner').text('Winner: ' + winner.username + '!');
+    if (totalMoney > 0) {
+      winnings += winner.money;
+      $('#winner').append('<br>Total money: ' + winnings);
+    }
+
+    users = [];
+  });
+});
+
+  </script>
+
+</html>
